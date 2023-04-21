@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Enum uuid="f50d1b85-2dcb-4e9a-ba48-0c8a3ad7f702">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.isc_МетодХраненияВГХ" category="Ref">
+				<xr:TypeId>47d1f834-a7a4-4ecf-9e2a-0ddbe37fecec</xr:TypeId>
+				<xr:ValueId>42bf2152-83bd-44de-929d-dfa72b5de685</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.isc_МетодХраненияВГХ" category="Manager">
+				<xr:TypeId>7c57d44c-8a55-4514-8e7d-ef1f0247530e</xr:TypeId>
+				<xr:ValueId>6535c183-417c-45f9-adb6-bf08775a2d32</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.isc_МетодХраненияВГХ" category="List">
+				<xr:TypeId>791a2ced-adf8-4da9-b1bd-1db463dbc679</xr:TypeId>
+				<xr:ValueId>6eb81699-7c14-4478-af67-04fdcad0302a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>isc_МетодХраненияВГХ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Isc метод хранения ВГХ</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="57df0afa-6a07-4075-8794-7aff5a3a723d">
+				<Properties>
+					<Name>РеквизитыНоменклатуры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты номенклатуры</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="85f8ba52-bedf-461e-ad3a-a9804ac24b66">
+				<Properties>
+					<Name>РеквизитыУпаковки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты упаковки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7aaec779-4e7f-49b1-941f-884dadef7a1c">
+				<Properties>
+					<Name>ДопРеквизитыНоменклатуры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доп. реквизиты номенклатуры</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4fb02ffe-a4ee-4212-a790-dae39d0f71fa">
+				<Properties>
+					<Name>ДопРеквизитыХарактеристики</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доп. реквизиты характеристики</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1e4e0588-0fda-44eb-ab94-cb1b5d97cb0e">
+				<Properties>
+					<Name>ДопСведенияНоменклатуры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доп. сведения номенклатуры</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9ecf11fb-86be-429d-b346-83931be38565">
+				<Properties>
+					<Name>ДопСведенияХарактеристики</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доп. сведения характеристики</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

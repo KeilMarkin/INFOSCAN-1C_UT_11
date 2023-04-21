@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelDecoration name="Декорация2" id="4">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Устройство "Инфоскан" может работать в двух режимах:
+- &lt;b&gt;Пассивный(формат JSON)&lt;/&gt;. Устройство хранит в себе данные и ждет когда 1С придет и прочитает их. Для работы в этом режиме предусмотрена "Форма опроса устройства". Можно считать данные с устройства как в режиме реального времени, так и прочитать историю измерений.
+
+-&lt;b&gt;Активный(формат SOAP)&lt;/&gt;. В этом режиме устройство при сканировании измерений отправляет данные на HTTP-сервис. Для работы в этом режиме необходимо развернуть web- сервер и опубликовать на нем http-сервис из данного расширения. Для удобства можно включить логирование в настройках чтобы можно было отследить данные пришедшие с устройства.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="6"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация1" id="1">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>
+Для возможности работы по протоколу SOAP, необходимо:
+- назначить пользователю роль для работы с расширением "Роль инфоскан" 
+- опубликовать вебсервис расширения на вебсерве и в настройках устройства прописать адрес HTTP сервиса.
+
+Если публиковать средствами 1С, то путь будет таким
+&lt;b&gt;http://192.198.10.10/YT_infoscan/ws/infoscan.1cws?wsdl&lt;/&gt;
+где
+192.198.10.10 - адрес вебсервера, на котором опуликова н сервис
+YT_infoscan - имя публикации(обычно совпадает с именем базы)
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="3"/>
+		</LabelDecoration>
+		<PictureDecoration name="Декорация3" id="19">
+			<Picture>
+				<xr:Ref>CommonPicture.isc_публикация</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="21"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация4" id="10">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для хранения ВГХ в 1С используют различные сущности в зависимости от сложившегося способа ведения учета. Данное расширение поддерживает "из коробки" несколько способов хранения данных.
+От устройства по умолчанию прилетают 4 характеристики:
+- Length
+- Height
+- Width
+- Weight
+Каждая характеристика независимо от остальных может храниться в различных типах метаданных.
+Ниже приведен пример</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация4КонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="12"/>
+		</LabelDecoration>
+		<PictureDecoration name="Декорация5" id="13">
+			<PictureSize>AutoSize</PictureSize>
+			<Zoomable>true</Zoomable>
+			<Picture>
+				<xr:Ref>CommonPicture.isc_НастройкиХранения</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Декорация5КонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="15"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация6" id="16">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Length - значение данной характеристики будет записываться  в реквизит &lt;u&gt;ДлинаЧислитель&lt;/&gt; элемента справочника Номенклатура, так метод хранения выбран "Реквизиты номенклатуры"
+
+Height - значение данной характеристики будет записываться  в Дополнительных сведениях(Регистр сведений) &lt;u&gt;Доп_сведения ширина&lt;/&gt; 
+
+Width - значение данной характеристики будет записываться  в Дополнительные реквизиты(табличная часть справочника Номенклатура) &lt;u&gt;Доп_реквизит Высота&lt;/&gt; 
+
+Weight - значение данной характеристики будет записываться  в реквизит &lt;u&gt;Вес&lt;/&gt; элемента справочника Упаковки и единицы измерения номенклатуры
+
+Аналогично можно выбрать методы хранения ВГХ Реквизиты Характеристик, Доп сведения Характеристик, Доп реквизиты характеристик, если в учете используются характеристики номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация6КонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="18"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация7" id="22">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если в компании учет ведется таким образом что ВГХ привязаны к упаковкам, то необходимо настроить соответствие символов обозначающих упаковки которые прилетают от устройства Инфоскан упаковкам в 1С
+&lt;img 0:a4b11869-a65f-4130-9304-2243cca84b59/&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация7КонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="24"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.isc_РаботаСУстройством</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+</Form>

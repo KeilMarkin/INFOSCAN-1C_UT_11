@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<InformationRegister uuid="77043ae6-1e12-4f24-9d19-d8dbca9174bc">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ДополнительныеСведения" category="Record">
+				<xr:TypeId>88c858ef-689f-49c3-8622-685f8a877d59</xr:TypeId>
+				<xr:ValueId>3984b68a-1ac4-4f74-afd3-42989ef6c1d3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ДополнительныеСведения" category="Manager">
+				<xr:TypeId>f5b9a7c6-a554-4687-98bd-dc282c69d510</xr:TypeId>
+				<xr:ValueId>ce67b656-5918-4ed0-b6e3-5fde12e0c1d9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ДополнительныеСведения" category="Selection">
+				<xr:TypeId>aee9b415-9bc6-42d7-ac6b-c00bb6232caa</xr:TypeId>
+				<xr:ValueId>8c93f1ae-d14a-4ad6-abc0-aa8f1d65aa28</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ДополнительныеСведения" category="List">
+				<xr:TypeId>3e8fdc19-f89d-4415-9de9-492419bd7332</xr:TypeId>
+				<xr:ValueId>d6f4d4a3-2dd8-4cb5-a8b2-6e80e1629d05</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ДополнительныеСведения" category="RecordSet">
+				<xr:TypeId>36bda242-1f5f-4e62-b3de-b049b8c7a927</xr:TypeId>
+				<xr:ValueId>35411fb6-6c29-461b-bfb2-3c06f25cffe7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ДополнительныеСведения" category="RecordKey">
+				<xr:TypeId>ccc0e944-0f3c-4a95-a64f-19ac3ac5ddea</xr:TypeId>
+				<xr:ValueId>97b47f97-166b-42d2-b808-b223abdcad36</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ДополнительныеСведения" category="RecordManager">
+				<xr:TypeId>e9e10c37-94bb-46d0-9f50-3d037c46e09d</xr:TypeId>
+				<xr:ValueId>1774f888-baee-4def-99b3-7f3b3cec6853</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ДополнительныеСведения</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>3ad5d8a7-3071-46aa-aebf-306bdb67983b</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="674e9bf2-924d-428d-b0f1-6636bd2c2bad">
+				<InternalInfo/>
+				<Properties>
+					<Name>Значение</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>ab7ef662-71c1-4d51-9f0f-ea8c5ea3df8a</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.ДополнительныеРеквизитыИСведения</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="a5a32e81-b57c-4922-ac6d-6a0330a1cc0e">
+				<InternalInfo/>
+				<Properties>
+					<Name>Объект</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>cb954476-c551-4a06-9bcd-18d67ba47dc8</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="ab07a662-3af4-4bcc-b8aa-b1cf39b56e2b">
+				<InternalInfo/>
+				<Properties>
+					<Name>Свойство</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>79201015-bfae-463e-81f1-0ae2d3066f3f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Работа с устройством(JSON)</v8:content>
+		</v8:item>
+	</Title>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаStartSession" id="47">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.StartSession</CommandName>
+				<ExtendedTooltip name="ФормаStartSessionРасширеннаяПодсказка" id="48"/>
+			</Button>
+			<Button name="ФормаStopSession" id="49">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.StopSession</CommandName>
+				<ExtendedTooltip name="ФормаStopSessionРасширеннаяПодсказка" id="50"/>
+			</Button>
+			<Button name="ФормаПрочитатьИсториюИзмерений" id="59">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПрочитатьИсториюИзмерений</CommandName>
+				<ExtendedTooltip name="ФормаПрочитатьИсториюИзмеренийРасширеннаяПодсказка" id="60"/>
+			</Button>
+			<Button name="ФормаВыгрузитьВCSV" id="51">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыгрузитьВCSV</CommandName>
+				<ExtendedTooltip name="ФормаВыгрузитьВCSVРасширеннаяПодсказка" id="52"/>
+			</Button>
+			<Button name="ФормаЗагрузитьВНоменклатуру" id="53">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьВНоменклатуру</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьВНоменклатуруРасширеннаяПодсказка" id="54"/>
+			</Button>
+			<Button name="ОчиститьТЧ" id="55">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОчиститьТЧ</CommandName>
+				<ExtendedTooltip name="ОчиститьТЧРасширеннаяПодсказка" id="56"/>
+			</Button>
+			<Button name="ФормаТестСоединения" id="57">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ТестСоединения</CommandName>
+				<ExtendedTooltip name="ФормаТестСоединенияРасширеннаяПодсказка" id="58"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Table name="HistoriOfScaning" id="1">
+			<CommandBarLocation>None</CommandBarLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.HistoriOfScaning</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="HistoriOfScaningКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="HistoriOfScaningКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="HistoriOfScaningРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="HistoriOfScaningСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>HistoriOfScaning</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="HistoriOfScaningСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="HistoriOfScaningСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="HistoriOfScaningСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>HistoriOfScaning</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="HistoriOfScaningСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="HistoriOfScaningСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="HistoriOfScaningУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>HistoriOfScaning</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="HistoriOfScaningУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="HistoriOfScaningУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="HistoriOfScaningНомерСтроки" id="14">
+					<DataPath>Объект.HistoriOfScaning.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="HistoriOfScaningНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="HistoriOfScaningНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<InputField name="HistoriOfScaningStatus" id="26">
+					<DataPath>Объект.HistoriOfScaning.Status</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<ContextMenu name="HistoriOfScaningStatusКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="HistoriOfScaningStatusРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="HistoriOfScaningBarcode" id="29">
+					<DataPath>Объект.HistoriOfScaning.Barcode</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="HistoriOfScaningBarcodeКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="HistoriOfScaningBarcodeРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="HistoriOfScaningНоменклатура" id="17">
+					<DataPath>Объект.HistoriOfScaning.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="HistoriOfScaningНоменклатураКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="HistoriOfScaningНоменклатураРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="HistoriOfScaningХарактеристика" id="20">
+					<DataPath>Объект.HistoriOfScaning.Характеристика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="HistoriOfScaningХарактеристикаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="HistoriOfScaningХарактеристикаРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<ColumnGroup name="HistoriOfScaningГруппа1" id="61">
+					<ExtendedTooltip name="HistoriOfScaningГруппа1РасширеннаяПодсказка" id="62"/>
+					<ChildItems>
+						<InputField name="HistoriOfScaningLength" id="32">
+							<DataPath>Объект.HistoriOfScaning.Length</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="HistoriOfScaningLengthКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="HistoriOfScaningLengthРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<InputField name="HistoriOfScaningWidth" id="35">
+							<DataPath>Объект.HistoriOfScaning.Width</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="HistoriOfScaningWidthКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="HistoriOfScaningWidthРасширеннаяПодсказка" id="37"/>
+						</InputField>
+						<InputField name="HistoriOfScaningHeight" id="38">
+							<DataPath>Объект.HistoriOfScaning.Height</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="HistoriOfScaningHeightКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="HistoriOfScaningHeightРасширеннаяПодсказка" id="40"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="HistoriOfScaningWeight" id="41">
+					<DataPath>Объект.HistoriOfScaning.Weight</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="HistoriOfScaningWeightКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="HistoriOfScaningWeightРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<ColumnGroup name="HistoriOfScaningГруппа2" id="63">
+					<ExtendedTooltip name="HistoriOfScaningГруппа2РасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<InputField name="HistoriOfScaningУпаковка" id="23">
+							<DataPath>Объект.HistoriOfScaning.Упаковка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="HistoriOfScaningУпаковкаКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="HistoriOfScaningУпаковкаРасширеннаяПодсказка" id="25"/>
+						</InputField>
+						<InputField name="HistoriOfScaningRatio" id="44">
+							<DataPath>Объект.HistoriOfScaning.Ratio</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="HistoriOfScaningRatioКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="HistoriOfScaningRatioРасширеннаяПодсказка" id="46"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.isc_РаботаСУстройством</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="StartSession" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать прием</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Start session</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>StartSession</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="StopSession" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закончить прием</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Stop session</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>StopSession</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыгрузитьВCSV" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в CSV</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить ВCSV</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьВCSV</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьВНоменклатуру" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в БД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить в номенклатуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьВНоменклатуру</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОчиститьТЧ" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьТЧ</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ТестСоединения" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест соединения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест соединения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестСоединения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПрочитатьИсториюИзмерений" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать историю измерений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать историю измерений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьИсториюИзмерений</Action>
+		</Command>
+	</Commands>
+</Form>
