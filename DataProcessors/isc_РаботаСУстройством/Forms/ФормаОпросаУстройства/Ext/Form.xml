@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -51,7 +51,7 @@
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
-			<DataPath>Объект.HistoriOfScaning</DataPath>
+			<DataPath>Объект.HistoryOfScaning</DataPath>
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="HistoriOfScaningКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="HistoriOfScaningКоманднаяПанель" id="3"/>
@@ -82,32 +82,32 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="HistoriOfScaningНомерСтроки" id="14">
-					<DataPath>Объект.HistoriOfScaning.LineNumber</DataPath>
+					<DataPath>Объект.HistoryOfScaning.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="HistoriOfScaningНомерСтрокиКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="HistoriOfScaningНомерСтрокиРасширеннаяПодсказка" id="16"/>
 				</LabelField>
 				<InputField name="HistoriOfScaningStatus" id="26">
-					<DataPath>Объект.HistoriOfScaning.Status</DataPath>
+					<DataPath>Объект.HistoryOfScaning.Status</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<Width>10</Width>
 					<ContextMenu name="HistoriOfScaningStatusКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="HistoriOfScaningStatusРасширеннаяПодсказка" id="28"/>
 				</InputField>
 				<InputField name="HistoriOfScaningBarcode" id="29">
-					<DataPath>Объект.HistoriOfScaning.Barcode</DataPath>
+					<DataPath>Объект.HistoryOfScaning.Barcode</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="HistoriOfScaningBarcodeКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="HistoriOfScaningBarcodeРасширеннаяПодсказка" id="31"/>
 				</InputField>
 				<InputField name="HistoriOfScaningНоменклатура" id="17">
-					<DataPath>Объект.HistoriOfScaning.Номенклатура</DataPath>
+					<DataPath>Объект.HistoryOfScaning.Номенклатура</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="HistoriOfScaningНоменклатураКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="HistoriOfScaningНоменклатураРасширеннаяПодсказка" id="19"/>
 				</InputField>
 				<InputField name="HistoriOfScaningХарактеристика" id="20">
-					<DataPath>Объект.HistoriOfScaning.Характеристика</DataPath>
+					<DataPath>Объект.HistoryOfScaning.Характеристика</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="HistoriOfScaningХарактеристикаКонтекстноеМеню" id="21"/>
 					<ExtendedTooltip name="HistoriOfScaningХарактеристикаРасширеннаяПодсказка" id="22"/>
@@ -116,19 +116,19 @@
 					<ExtendedTooltip name="HistoriOfScaningГруппа1РасширеннаяПодсказка" id="62"/>
 					<ChildItems>
 						<InputField name="HistoriOfScaningLength" id="32">
-							<DataPath>Объект.HistoriOfScaning.Length</DataPath>
+							<DataPath>Объект.HistoryOfScaning.Length</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="HistoriOfScaningLengthКонтекстноеМеню" id="33"/>
 							<ExtendedTooltip name="HistoriOfScaningLengthРасширеннаяПодсказка" id="34"/>
 						</InputField>
 						<InputField name="HistoriOfScaningWidth" id="35">
-							<DataPath>Объект.HistoriOfScaning.Width</DataPath>
+							<DataPath>Объект.HistoryOfScaning.Width</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="HistoriOfScaningWidthКонтекстноеМеню" id="36"/>
 							<ExtendedTooltip name="HistoriOfScaningWidthРасширеннаяПодсказка" id="37"/>
 						</InputField>
 						<InputField name="HistoriOfScaningHeight" id="38">
-							<DataPath>Объект.HistoriOfScaning.Height</DataPath>
+							<DataPath>Объект.HistoryOfScaning.Height</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="HistoriOfScaningHeightКонтекстноеМеню" id="39"/>
 							<ExtendedTooltip name="HistoriOfScaningHeightРасширеннаяПодсказка" id="40"/>
@@ -136,7 +136,7 @@
 					</ChildItems>
 				</ColumnGroup>
 				<InputField name="HistoriOfScaningWeight" id="41">
-					<DataPath>Объект.HistoriOfScaning.Weight</DataPath>
+					<DataPath>Объект.HistoryOfScaning.Weight</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="HistoriOfScaningWeightКонтекстноеМеню" id="42"/>
 					<ExtendedTooltip name="HistoriOfScaningWeightРасширеннаяПодсказка" id="43"/>
@@ -145,13 +145,13 @@
 					<ExtendedTooltip name="HistoriOfScaningГруппа2РасширеннаяПодсказка" id="64"/>
 					<ChildItems>
 						<InputField name="HistoriOfScaningУпаковка" id="23">
-							<DataPath>Объект.HistoriOfScaning.Упаковка</DataPath>
+							<DataPath>Объект.HistoryOfScaning.Упаковка</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="HistoriOfScaningУпаковкаКонтекстноеМеню" id="24"/>
 							<ExtendedTooltip name="HistoriOfScaningУпаковкаРасширеннаяПодсказка" id="25"/>
 						</InputField>
 						<InputField name="HistoriOfScaningRatio" id="44">
-							<DataPath>Объект.HistoriOfScaning.Ratio</DataPath>
+							<DataPath>Объект.HistoryOfScaning.Ratio</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="HistoriOfScaningRatioКонтекстноеМеню" id="45"/>
 							<ExtendedTooltip name="HistoriOfScaningRatioРасширеннаяПодсказка" id="46"/>
