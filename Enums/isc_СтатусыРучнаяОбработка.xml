@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Enum uuid="dc0379af-ef81-4fdb-acc5-40c6c2e7dac8">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.isc_СтатусыРучнаяОбработка" category="Ref">
+				<xr:TypeId>5b312389-7886-4c62-9e15-f445b643f5a2</xr:TypeId>
+				<xr:ValueId>6c090397-a78b-4fff-9464-392bda404b6b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.isc_СтатусыРучнаяОбработка" category="Manager">
+				<xr:TypeId>53cffc4f-2c10-45cd-a2d2-b6368a8ebdce</xr:TypeId>
+				<xr:ValueId>482ac626-5b8b-4dab-b5df-fb90d48ca114</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.isc_СтатусыРучнаяОбработка" category="List">
+				<xr:TypeId>cfb0dc90-1593-44f4-b652-1d024868b8c6</xr:TypeId>
+				<xr:ValueId>45d8304c-dc72-4524-a129-b972f2ba5791</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>isc_СтатусыРучнаяОбработка</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Isc статусы ручная обработка</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="985d4818-c699-41b0-8d65-9f1679e1facb">
+				<Properties>
+					<Name>ДанныеПолучены</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные получены</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3454fe92-d33d-43ff-8e89-559f45018a1e">
+				<Properties>
+					<Name>ШКСопоставлен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ШК сопоставлен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="207b5b88-d94a-4fce-9c48-edb9ce623de8">
+				<Properties>
+					<Name>ШКУстановленВручную</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ШК установлен вручную</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cac685f7-5288-4a50-bcae-6e98a10ef8a3">
+				<Properties>
+					<Name>ДанныеЗаписаныВБД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные записаны в БД</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f98d5962-04ce-4b9f-ae0e-a81a16d07d4c">
+				<Properties>
+					<Name>ОшибкаСохраненияВБД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка сохранения в БД</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

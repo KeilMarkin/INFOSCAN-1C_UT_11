@@ -143,7 +143,13 @@
 							<FillValue xsi:nil="true"/>
 							<FillChecking>DontCheck</FillChecking>
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Номенклатура</xr:Name>
+									<xr:DataPath xsi:type="xs:string">DataProcessor.isc_РаботаСУстройством.TabularSection.HistoryOfScaning.Attribute.Номенклатура</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
 							<ChoiceParameters/>
 							<QuickChoice>Auto</QuickChoice>
 							<CreateOnInput>Auto</CreateOnInput>
@@ -179,7 +185,13 @@
 							<FillValue xsi:nil="true"/>
 							<FillChecking>DontCheck</FillChecking>
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Номенклатура</xr:Name>
+									<xr:DataPath xsi:type="xs:string">DataProcessor.isc_РаботаСУстройством.TabularSection.HistoryOfScaning.Attribute.Номенклатура</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
 							<ChoiceParameters/>
 							<QuickChoice>Auto</QuickChoice>
 							<CreateOnInput>Auto</CreateOnInput>
@@ -199,11 +211,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>100</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
+								<v8:Type>cfg:EnumRef.isc_СтатусыРучнаяОбработка</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>

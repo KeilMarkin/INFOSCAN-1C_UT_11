@@ -6,46 +6,64 @@
 			<v8:content>Работа с устройством(JSON)</v8:content>
 		</v8:item>
 	</Title>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<ChildItems>
-			<Button name="ФормаStartSession" id="47">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.StartSession</CommandName>
-				<ExtendedTooltip name="ФормаStartSessionРасширеннаяПодсказка" id="48"/>
-			</Button>
-			<Button name="ФормаStopSession" id="49">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.StopSession</CommandName>
-				<ExtendedTooltip name="ФормаStopSessionРасширеннаяПодсказка" id="50"/>
-			</Button>
-			<Button name="ФормаПрочитатьИсториюИзмерений" id="59">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ПрочитатьИсториюИзмерений</CommandName>
-				<ExtendedTooltip name="ФормаПрочитатьИсториюИзмеренийРасширеннаяПодсказка" id="60"/>
-			</Button>
-			<Button name="ФормаВыгрузитьВCSV" id="51">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ВыгрузитьВCSV</CommandName>
-				<ExtendedTooltip name="ФормаВыгрузитьВCSVРасширеннаяПодсказка" id="52"/>
-			</Button>
-			<Button name="ФормаЗагрузитьВНоменклатуру" id="53">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ЗагрузитьВНоменклатуру</CommandName>
-				<ExtendedTooltip name="ФормаЗагрузитьВНоменклатуруРасширеннаяПодсказка" id="54"/>
-			</Button>
-			<Button name="ОчиститьТЧ" id="55">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ОчиститьТЧ</CommandName>
-				<ExtendedTooltip name="ОчиститьТЧРасширеннаяПодсказка" id="56"/>
-			</Button>
-			<Button name="ФормаТестСоединения" id="57">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ТестСоединения</CommandName>
-				<ExtendedTooltip name="ФормаТестСоединенияРасширеннаяПодсказка" id="58"/>
-			</Button>
-		</ChildItems>
-	</AutoCommandBar>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
+		<UsualGroup name="Группа1" id="65">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="66"/>
+			<ChildItems>
+				<InputField name="Устройство" id="67">
+					<DataPath>Устройство</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="УстройствоКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="УстройствоРасширеннаяПодсказка" id="69"/>
+				</InputField>
+				<Button name="ФормаStartSession" id="47">
+					<Type>UsualButton</Type>
+					<Width>12</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<CommandName>Form.Command.StartSession</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ФормаStartSessionРасширеннаяПодсказка" id="48"/>
+				</Button>
+				<Button name="ФормаStopSession" id="49">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.StopSession</CommandName>
+					<ExtendedTooltip name="ФормаStopSessionРасширеннаяПодсказка" id="50"/>
+				</Button>
+				<Button name="ФормаПрочитатьИсториюИзмерений" id="59">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПрочитатьИсториюИзмерений</CommandName>
+					<ExtendedTooltip name="ФормаПрочитатьИсториюИзмеренийРасширеннаяПодсказка" id="60"/>
+				</Button>
+				<Button name="ФормаВыгрузитьВCSV" id="51">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыгрузитьВCSV</CommandName>
+					<ExtendedTooltip name="ФормаВыгрузитьВCSVРасширеннаяПодсказка" id="52"/>
+				</Button>
+				<Button name="ФормаЗагрузитьВНоменклатуру" id="53">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СохранитьВБазу</CommandName>
+					<ExtendedTooltip name="ФормаЗагрузитьВНоменклатуруРасширеннаяПодсказка" id="54"/>
+				</Button>
+				<Button name="ОчиститьТЧ" id="55">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОчиститьТЧ</CommandName>
+					<ExtendedTooltip name="ОчиститьТЧРасширеннаяПодсказка" id="56"/>
+				</Button>
+				<Button name="ФормаТестСоединения" id="57">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ТестСоединения</CommandName>
+					<ExtendedTooltip name="ФормаТестСоединенияРасширеннаяПодсказка" id="58"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 		<Table name="HistoriOfScaning" id="1">
 			<CommandBarLocation>None</CommandBarLocation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -84,11 +102,14 @@
 				<LabelField name="HistoriOfScaningНомерСтроки" id="14">
 					<DataPath>Объект.HistoryOfScaning.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<ShowInHeader>false</ShowInHeader>
+					<HorizontalStretch>true</HorizontalStretch>
 					<ContextMenu name="HistoriOfScaningНомерСтрокиКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="HistoriOfScaningНомерСтрокиРасширеннаяПодсказка" id="16"/>
 				</LabelField>
 				<InputField name="HistoriOfScaningStatus" id="26">
 					<DataPath>Объект.HistoryOfScaning.Status</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<Width>10</Width>
 					<ContextMenu name="HistoriOfScaningStatusКонтекстноеМеню" id="27"/>
@@ -99,6 +120,9 @@
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="HistoriOfScaningBarcodeКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="HistoriOfScaningBarcodeРасширеннаяПодсказка" id="31"/>
+					<Events>
+						<Event name="OnChange">HistoriOfScaningBarcodeПриИзменении</Event>
+					</Events>
 				</InputField>
 				<InputField name="HistoriOfScaningНоменклатура" id="17">
 					<DataPath>Объект.HistoryOfScaning.Номенклатура</DataPath>
@@ -168,6 +192,17 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
+		<Attribute name="Устройство" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Устройство</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.isc_Настройки</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="StartSession" id="1">
@@ -218,7 +253,7 @@
 			<Action>ВыгрузитьВCSV</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="ЗагрузитьВНоменклатуру" id="4">
+		<Command name="СохранитьВБазу" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -228,10 +263,10 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить в номенклатуру</v8:content>
+					<v8:content>Сохранить в базу</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ЗагрузитьВНоменклатуру</Action>
+			<Action>СохранитьВБазуКоманда</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОчиститьТЧ" id="5">
@@ -281,6 +316,24 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПрочитатьИсториюИзмерений</Action>
+		</Command>
+		<Command name="ДлитОперация" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Длит операция</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Длит операция</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 		</Command>
 	</Commands>
 </Form>

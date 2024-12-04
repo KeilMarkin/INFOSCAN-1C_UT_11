@@ -60,125 +60,27 @@
 							<ContextMenu name="ЛогированиеКонтекстноеМеню" id="41"/>
 							<ExtendedTooltip name="ЛогированиеРасширеннаяПодсказка" id="42"/>
 						</CheckBoxField>
-						<UsualGroup name="Группа1" id="43">
+						<Button name="ДобавитьУстройство" id="147">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ДобавитьУстройство</CommandName>
+							<ExtendedTooltip name="ДобавитьУстройствоРасширеннаяПодсказка" id="148"/>
+						</Button>
+						<Pages name="СтраницыУстройства" id="149">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Только для работы устройства в Пассивном режиме</v8:content>
+									<v8:content>Страницы устройства</v8:content>
 								</v8:item>
 							</Title>
-							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
-							<Representation>StrongSeparation</Representation>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="44"/>
-							<ChildItems>
-								<UsualGroup name="Группа7" id="136">
-									<Group>AlwaysHorizontal</Group>
-									<Behavior>Usual</Behavior>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="137"/>
-									<ChildItems>
-										<InputField name="АдресУстройства" id="7">
-											<DataPath>АдресУстройства</DataPath>
-											<Width>11</Width>
-											<HorizontalStretch>false</HorizontalStretch>
-											<InputHint>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>192.168.1.100</v8:content>
-												</v8:item>
-											</InputHint>
-											<ContextMenu name="АдресУстройстваКонтекстноеМеню" id="8"/>
-											<ExtendedTooltip name="АдресУстройстваРасширеннаяПодсказка" id="9"/>
-											<Events>
-												<Event name="OnChange">ДанныеФормы_ПриИзменении</Event>
-											</Events>
-										</InputField>
-										<InputField name="Endpoint" id="138">
-											<DataPath>Endpoint</DataPath>
-											<InputHint>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>/api/data</v8:content>
-												</v8:item>
-											</InputHint>
-											<ContextMenu name="EndpointКонтекстноеМеню" id="139"/>
-											<ExtendedTooltip name="EndpointРасширеннаяПодсказка" id="140"/>
-											<Events>
-												<Event name="OnChange">ДанныеФормы_ПриИзменении</Event>
-											</Events>
-										</InputField>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="Группа6" id="131">
-									<Group>AlwaysHorizontal</Group>
-									<Behavior>Usual</Behavior>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="132"/>
-									<ChildItems>
-										<InputField name="Порт" id="16">
-											<DataPath>Порт</DataPath>
-											<EditFormat>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>ЧГ=0</v8:content>
-												</v8:item>
-											</EditFormat>
-											<ContextMenu name="ПортКонтекстноеМеню" id="17"/>
-											<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="18"/>
-											<Events>
-												<Event name="OnChange">ДанныеФормы_ПриИзменении</Event>
-											</Events>
-										</InputField>
-										<CheckBoxField name="ЗащищенноеСоединение" id="133">
-											<DataPath>ЗащищенноеСоединение</DataPath>
-											<TitleLocation>Right</TitleLocation>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ЗащищенноеСоединениеКонтекстноеМеню" id="134"/>
-											<ExtendedTooltip name="ЗащищенноеСоединениеРасширеннаяПодсказка" id="135"/>
-											<Events>
-												<Event name="OnChange">ДанныеФормы_ПриИзменении</Event>
-											</Events>
-										</CheckBoxField>
-									</ChildItems>
-								</UsualGroup>
-								<InputField name="Логин" id="10">
-									<DataPath>Логин</DataPath>
-									<InputHint>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>user</v8:content>
-										</v8:item>
-									</InputHint>
-									<ContextMenu name="ЛогинКонтекстноеМеню" id="11"/>
-									<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="12"/>
-									<Events>
-										<Event name="OnChange">ДанныеФормы_ПриИзменении</Event>
-									</Events>
-								</InputField>
-								<InputField name="Пароль" id="13">
-									<DataPath>Пароль</DataPath>
-									<InputHint>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>user</v8:content>
-										</v8:item>
-									</InputHint>
-									<ContextMenu name="ПарольКонтекстноеМеню" id="14"/>
-									<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="15"/>
-									<Events>
-										<Event name="OnChange">ДанныеФормы_ПриИзменении</Event>
-									</Events>
-								</InputField>
-								<Button name="ТестСоединения" id="36">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.ТестСоединения</CommandName>
-									<ExtendedTooltip name="ТестСоединенияРасширеннаяПодсказка" id="37"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы устройства</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыУстройстваРасширеннаяПодсказка" id="150"/>
+						</Pages>
 					</ChildItems>
 				</Page>
 				<Page name="СтрХранение" id="145">
@@ -204,13 +106,11 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="83"/>
 							<ChildItems>
 								<UsualGroup name="Группа4" id="80">
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="81"/>
@@ -318,7 +218,6 @@
 								</UsualGroup>
 								<UsualGroup name="Группа2" id="78">
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="79"/>
@@ -666,6 +565,51 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ТестСоединения</Action>
+		</Command>
+		<Command name="ДобавитьУстройство" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить устройство</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить устройство</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьУстройство</Action>
+		</Command>
+		<Command name="СохранитьУстройство" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить устройство</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить устройство</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьУстройство</Action>
+		</Command>
+		<Command name="УдалитьУстройство" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить устройство</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить устройство</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьУстройство</Action>
 		</Command>
 	</Commands>
 </Form>

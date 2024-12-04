@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.isc_РольИнфоскан</xr:Item>
 			</DefaultRoles>
 			<Vendor/>
-			<Version>22.10.10</Version>
+			<Version>24.12.04</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -70,14 +70,17 @@
 			<CommonPicture>isc_публикация</CommonPicture>
 			<CommonPicture>isc_НастройкиХранения</CommonPicture>
 			<CommonPicture>isc_Упаковки</CommonPicture>
+			<CommonPicture>ДлительнаяОперация16</CommonPicture>
 			<Role>isc_РольИнфоскан</Role>
 			<WebService>WSInfoscan</WebService>
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>УпаковкиЕдиницыИзмерения</Catalog>
 			<Catalog>ХарактеристикиНоменклатуры</Catalog>
 			<Catalog>isc_Настройки</Catalog>
+			<Catalog>Пользователи</Catalog>
 			<Enum>ЕдиницыИзмеренияВремени</Enum>
 			<Enum>isc_МетодХраненияВГХ</Enum>
+			<Enum>isc_СтатусыРучнаяОбработка</Enum>
 			<DataProcessor>isc_РаботаСУстройством</DataProcessor>
 			<InformationRegister>ШтрихкодыНоменклатуры</InformationRegister>
 			<InformationRegister>isc_ЛогСобытий</InformationRegister>
