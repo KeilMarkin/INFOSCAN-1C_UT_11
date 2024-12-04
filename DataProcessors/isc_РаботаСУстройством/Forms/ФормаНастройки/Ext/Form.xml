@@ -6,23 +6,9 @@
 			<v8:content>Работа с устройством: настройки</v8:content>
 		</v8:item>
 	</Title>
+	<CommandBarLocation>None</CommandBarLocation>
 	<Scale>98</Scale>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<ChildItems>
-			<Button name="СохранитьНастройки" id="38">
-				<Type>CommandBarButton</Type>
-				<Representation>PictureAndText</Representation>
-				<DefaultButton>true</DefaultButton>
-				<HorizontalStretch>true</HorizontalStretch>
-				<CommandName>Form.Command.СохранитьНастройки</CommandName>
-				<Picture>
-					<xr:Ref>StdPicture.EndEdit</xr:Ref>
-					<xr:LoadTransparent>true</xr:LoadTransparent>
-				</Picture>
-				<ExtendedTooltip name="СохранитьНастройкиРасширеннаяПодсказка" id="39"/>
-			</Button>
-		</ChildItems>
-	</AutoCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -129,6 +115,18 @@
 											<ContextMenu name="Декорация2КонтекстноеМеню" id="107"/>
 											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="108"/>
 										</LabelDecoration>
+										<Button name="СохранитьНастройки" id="38">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<DefaultButton>true</DefaultButton>
+											<HorizontalStretch>true</HorizontalStretch>
+											<CommandName>Form.Command.СохранитьНастройки</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.EndEdit</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="СохранитьНастройкиРасширеннаяПодсказка" id="39"/>
+										</Button>
 										<Table name="МетодыХранения" id="48">
 											<Representation>List</Representation>
 											<CommandBarLocation>None</CommandBarLocation>
