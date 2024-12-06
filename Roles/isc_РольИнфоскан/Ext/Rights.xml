@@ -75,6 +75,13 @@
 		</right>
 	</object>
 	<object>
+		<name>WebService.WSInfoscan.Operation.SaveParametrs</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.isc_Настройки</name>
 		<right>
 			<name>Read</name>
@@ -110,9 +117,23 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.isc_Инфоскан</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.isc_РаботаСУстройством.Command.ОписаниеРаботыSOAP</name>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>WebService.WSInfoscan.Operation.CheckBarcode</name>
+		<right>
+			<name>Use</name>
 			<value>true</value>
 		</right>
 	</object>
