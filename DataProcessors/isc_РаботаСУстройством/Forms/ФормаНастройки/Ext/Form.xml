@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -37,7 +37,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Логирование (будет вестись запись в региср 
+									<v8:content>Логирование (будет вестись запись в регистр 
 "Лог событий")</v8:content>
 								</v8:item>
 							</Title>
@@ -115,23 +115,13 @@
 											<ContextMenu name="Декорация2КонтекстноеМеню" id="107"/>
 											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="108"/>
 										</LabelDecoration>
-										<Button name="СохранитьНастройки" id="38">
-											<Type>UsualButton</Type>
-											<Representation>PictureAndText</Representation>
-											<DefaultButton>true</DefaultButton>
-											<HorizontalStretch>true</HorizontalStretch>
-											<CommandName>Form.Command.СохранитьНастройки</CommandName>
-											<Picture>
-												<xr:Ref>StdPicture.EndEdit</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-											</Picture>
-											<ExtendedTooltip name="СохранитьНастройкиРасширеннаяПодсказка" id="39"/>
-										</Button>
 										<Table name="МетодыХранения" id="48">
 											<Representation>List</Representation>
 											<CommandBarLocation>None</CommandBarLocation>
-											<Height>4</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<HeightInTableRows>5</HeightInTableRows>
 											<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
+											<AutoMaxRowsCount>false</AutoMaxRowsCount>
 											<VerticalStretch>false</VerticalStretch>
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
@@ -204,12 +194,12 @@
 													<ContextMenu name="МетодыХраниенияЕдИзмКонтекстноеМеню" id="76"/>
 													<ExtendedTooltip name="МетодыХраниенияЕдИзмРасширеннаяПодсказка" id="77"/>
 												</InputField>
-												<InputField name="МетодыХраненияПримечание" id="70">
+												<LabelField name="МетодыХраненияПримечание" id="70">
 													<DataPath>МетодыХранения.Примечание</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="МетодыХраненияПримечаниеКонтекстноеМеню" id="71"/>
 													<ExtendedTooltip name="МетодыХраненияПримечаниеРасширеннаяПодсказка" id="72"/>
-												</InputField>
+												</LabelField>
 											</ChildItems>
 										</Table>
 									</ChildItems>
@@ -221,6 +211,8 @@
 									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="79"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация3" id="109">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -233,6 +225,7 @@
 										<Table name="СоответствиеУпаковок" id="112">
 											<Representation>List</Representation>
 											<AutoMaxWidth>false</AutoMaxWidth>
+											<HeightInTableRows>3</HeightInTableRows>
 											<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
@@ -294,6 +287,18 @@
 				</Page>
 			</ChildItems>
 		</Pages>
+		<Button name="СохранитьНастройки" id="38">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<DefaultButton>true</DefaultButton>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.СохранитьНастройки</CommandName>
+			<Picture>
+				<xr:Ref>StdPicture.EndEdit</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="СохранитьНастройкиРасширеннаяПодсказка" id="39"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
