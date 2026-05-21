@@ -26,7 +26,7 @@
 
 КонецФункции
 
-Функция SaveParametrs(Barcode, Status, Comment, Length, Height, Width, Weight, ItemType) 
+Функция SaveParametrs(Barcode, Status, Comment, Length, Height, Width, Weight, Volume, ItemType) 
 	
 	Запрос = Новый Запрос(
 	"ВЫБРАТЬ
@@ -41,7 +41,7 @@
 	Запрос.УстановитьПараметр("Штрихкод", Barcode);
 	Результат = Запрос.Выполнить().Выбрать();
 	Настройки = Справочники.isc_Настройки.ПолучитьНастройкиУстройстваПоУмолчанию();	
-	сткВГХ = Новый Структура("Barcode,Length,Height,Width,Weight,ItemType", Barcode, Length, Height, Width, Weight, ItemType);
+	сткВГХ = Новый Структура("Barcode,Length,Height,Width,Weight,Volume,ItemType", Barcode, Length, Height, Width, Weight, Volume, ItemType);
 	Если Результат.Следующий() Тогда
 		
 		// Каждое измерение может храниться в различных реквизитах

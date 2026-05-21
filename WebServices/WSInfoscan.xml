@@ -209,6 +209,21 @@
 							<TransferDirection>In</TransferDirection>
 						</Properties>
 					</Parameter>
+					<Parameter uuid="81ee864e-7216-42ed-bfa2-6962811276cb">
+						<Properties>
+							<Name>Volume</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Volume</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:double</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
 					<Parameter uuid="88b43710-c4e5-43fa-99a4-91563ada7b8a">
 						<Properties>
 							<Name>ItemType</Name>
