@@ -1,12 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<CommandsVisibility>
-		<Command name="InformationRegister.isc_ЛогСобытий.StandardCommand.OpenList">
+		<Command name="DataProcessor.isc_РаботаСУстройством.Command.Настройки">
 			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="DataProcessor.isc_РаботаСУстройством.StandardCommand.Open">
+		<Command name="DataProcessor.isc_РаботаСУстройством.Command.ОпросУстройства">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.isc_ЛогСобытий.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.isc_РаботаСУстройством.Command.ОписаниеРаботыSOAP">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ШтрихкодыНоменклатуры.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
