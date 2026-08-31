@@ -529,6 +529,8 @@
 			<Form>ФормаОпросаУстройства</Form>
 			<Form>ФормаОписаниеРаботы</Form>
 			<Form>ГлавнаяФорма</Form>
+			<Template>FinishSend3Д90</Template>
+			<Template>FinishSendКамера</Template>
 			<Command uuid="5d48c099-961c-4579-9949-0a13e761aacc">
 				<Properties>
 					<Name>Настройки</Name>

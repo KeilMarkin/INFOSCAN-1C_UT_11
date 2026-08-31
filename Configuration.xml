@@ -65,12 +65,14 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>isc_ИнфосканСлужебная</Subsystem>
 			<Subsystem>isc_Инфоскан</Subsystem>
 			<CommonPicture>isc_лого</CommonPicture>
 			<CommonPicture>isc_публикация</CommonPicture>
 			<CommonPicture>isc_НастройкиХранения</CommonPicture>
 			<CommonPicture>isc_Упаковки</CommonPicture>
 			<CommonPicture>ДлительнаяОперация16</CommonPicture>
+			<CommonPicture>isc_Логотип</CommonPicture>
 			<Role>isc_РольИнфоскан</Role>
 			<CommonModule>isc_ОбщийМодуль</CommonModule>
 			<WebService>WSInfoscan</WebService>

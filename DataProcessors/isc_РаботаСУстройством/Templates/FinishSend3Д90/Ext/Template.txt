@@ -1,0 +1,56 @@
+﻿var num = SENSOR.lengthFormat;
+if (num == null) {
+    num = 0;
+}
+
+return {
+    http: function() {
+        return {
+            url: 'Адрес', //<======== Адрес отправки без ?wsdl
+            headers: { 
+                'Content-type': 'application/xml',
+                'Authorization': 'Basic ' + HELPER_JS.toBase64('Логин' + ':' + 'Пароль') //<======== Данные авторизации
+            },
+            body: function() { // return string
+
+                return "<x:Envelope xmlns:x=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:isc=\"iscan.com\">" +
+                        "<x:Header/>" + 
+                            "<x:Body>" + 
+                                "<isc:SaveParametrs>" + 
+                                "<isc:Barcode>" + BARCODE + "</isc:Barcode>" + 
+                                "<isc:Length>" + num + "</isc:Length>" + 
+                                "<isc:Height>" + SENSOR.heightFormat + "</isc:Height>" + 
+                                "<isc:Width>" + SENSOR.widthFormat + "</isc:Width>" + 
+                                "<isc:Weight>" + SENSOR.weightFormat + "</isc:Weight>" + 
+                                "<isc:Volume>" + SENSOR.volumeFormat + "</isc:Volume>" + 
+                                '<isc:ItemType>1</isc:ItemType>' +
+                                "</isc:SaveParametrs>" +
+                            "</x:Body>" +
+                        "</x:Envelope>"
+            },
+            resp: function(resp, httpCode) { // return obj
+                console.log(BARCODE)
+                console.log('resp', resp)
+                console.log('xpath1', HELPER_JS.xmlXPath(resp, '/soap:Envelope/soap:Body/m:SaveParametrsResponse/m:Status/text()'))
+                if (httpCode == 200) {
+                    if (HELPER_JS.xmlXPath(resp, '/soap:Envelope/soap:Body/m:SaveParametrsResponse/m:Status/text()') == 'OK') {
+                        return {
+                            banner: BARCODE + ' - Успешно записан',
+                            comment: HELPER_JS.xmlXPath(resp, '/soap:Envelope/soap:Body/m:SaveParametrsResponse/m:Comment/text()') + ' '
+                        }
+                    }
+                    if (HELPER_JS.xmlXPath(resp, '/soap:Envelope/soap:Body/m:SaveParametrsResponse/m:Status/text()') == 'ER') {
+                        throw Error(BARCODE + ' - ' + HELPER_JS.xmlXPath(resp, '/soap:Envelope/soap:Body/m:SaveParametrsResponse/m:Comment/text()'))
+                    }
+                    if (HELPER_JS.xmlXPath(resp, '/soap:Envelope/soap:Body/soap:Fault/faultstring/text()') != 'undefined') {
+                        throw Error(BARCODE + ' - ' + HELPER_JS.xmlXPath(resp, '/soap:Envelope/soap:Body/soap:Fault/faultstring/text()').replace(/\n/g, " ").substr(0, 120))
+                    } else {
+                        throw Error(BARCODE + ' - Ошибка отправки данных на сервис')
+                    }
+                } else {
+                    throw Error('Ошибка, получен HTTP код: ' + httpCode + ', вместо ожидаемого HTTP кода 200')
+                }
+            }
+        }
+    }
+}
