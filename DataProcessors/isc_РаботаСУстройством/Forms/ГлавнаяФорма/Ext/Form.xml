@@ -253,6 +253,8 @@
 							<Representation>List</Representation>
 							<TitleLocation>Top</TitleLocation>
 							<ChangeRowOrder>false</ChangeRowOrder>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -406,6 +408,8 @@
 						</UsualGroup>
 						<Table name="HistoryOfScaning" id="135">
 							<CommandBarLocation>None</CommandBarLocation>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -690,6 +694,8 @@
 					<ExtendedTooltip name="СтрЛогСобытийРасширеннаяПодсказка" id="51"/>
 					<ChildItems>
 						<Table name="дсЛогСобытий" id="52">
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>дсЛогСобытий</DataPath>

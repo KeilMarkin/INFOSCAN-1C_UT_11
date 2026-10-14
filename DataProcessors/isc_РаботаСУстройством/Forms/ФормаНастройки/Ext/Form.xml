@@ -122,6 +122,8 @@
 											<HeightInTableRows>5</HeightInTableRows>
 											<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
 											<AutoMaxRowsCount>false</AutoMaxRowsCount>
+											<HorizontalLines>false</HorizontalLines>
+											<VerticalLines>false</VerticalLines>
 											<VerticalStretch>false</VerticalStretch>
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
@@ -227,6 +229,8 @@
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<HeightInTableRows>3</HeightInTableRows>
 											<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
+											<HorizontalLines>false</HorizontalLines>
+											<VerticalLines>false</VerticalLines>
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
 											<DataPath>СоответствиеУпаковок</DataPath>

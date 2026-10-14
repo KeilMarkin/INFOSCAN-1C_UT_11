@@ -66,6 +66,8 @@
 		</UsualGroup>
 		<Table name="HistoriOfScaning" id="1">
 			<CommandBarLocation>None</CommandBarLocation>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
